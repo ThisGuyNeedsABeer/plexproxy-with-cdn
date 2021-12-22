@@ -39,7 +39,7 @@ server {
         ssl_session_tickets off;
 
         #Use: openssl dhparam -out dhparam.pem 2048 - 4096 is better but for overhead reasons 2048 is enough for Plex.
-        ssl_dhparam /etc/nginx/conf.d/additional/ssl/plex.yourdomain.tld/dhparam.pem;
+        ssl_dhparam /etc/nginx/conf.d/additional/ssl/dhparam.pem;
         ssl_ecdh_curve secp384r1;
 
         #Will ensure https is always used by supported browsers which prevents any server-side http > https redirects, as the browser will internally correct any request to https.
