@@ -17,8 +17,8 @@ server {
         resolver_timeout 10s;
 
         #Use letsencrypt.org to get a free and trusted ssl certificate
-        ssl_certificate /etc/nginx/ssl/plex.yourdomain.tld/fullchain.pem;
-        ssl_certificate_key /etc/nginx/ssl/plex.yourdomain.tld/privkey.pem;
+        ssl_certificate /etc/letsencrypt/live/yourdomain.tld/fullchain.pemm;
+        ssl_certificate_key /etc/letsencrypt/live/yourdomain.tld/privkey.pem;
 
         ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
         ssl_prefer_server_ciphers on;
